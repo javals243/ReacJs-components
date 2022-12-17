@@ -1,5 +1,10 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
+import Accordion from "./components/Accordion";
+import Carousel from "./components/Carousel";
+import HamBurger from "./components/HamBurger";
+import HamBurgerDropDown from "./components/HamBurgerDropdown";
+import NavBar from "./components/NavBar";
 
 function App() {
   const row1 = [
@@ -22,7 +27,7 @@ function App() {
 
   return (
     <AppContainer>
-      <Wrapper>
+      {/* <Wrapper>
         <Text>With Great Outcomes.</Text>
         <Note>Our customers have gotten offers from awesome companies.</Note>
         <Marquee>
@@ -57,7 +62,9 @@ function App() {
             ))}
           </MarqueeGroup2>
         </Marquee>
-      </Wrapper>
+      </Wrapper> */}
+
+      <NavBar />
     </AppContainer>
   );
 }
