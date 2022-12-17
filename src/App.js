@@ -5,6 +5,10 @@ import Carousel from "./components/Carousel";
 import HamBurger from "./components/HamBurger";
 import HamBurgerDropDown from "./components/HamBurgerDropdown";
 import NavBar from "./components/NavBar";
+import ContextMenu from "./components/ContextMenu";
+
+import IconWithToolTip from "./components/IconWithTooltips";
+import RadioButton from "./components/RadioButton";
 
 function App() {
   const row1 = [
@@ -24,7 +28,10 @@ function App() {
     "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/f50ae7cbf6cc805bdadc.png",
     "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/6c585c33ca6c71c79bb7.png",
   ];
-
+  const items = {
+    id: 1,
+    name: "Button1",
+  };
   return (
     <AppContainer>
       {/* <Wrapper>
@@ -64,7 +71,14 @@ function App() {
         </Marquee>
       </Wrapper> */}
 
-      <NavBar />
+      {/* <Carousel /> */}
+      {/* <Accordion
+        title={"hello guys"}
+        content={"first of all i can implement this for my best practices"} */}
+      {/* /> */}
+      {/* <HamBurgerDropDown /> */}
+      {/* <IconWithToolTip tooltip={"hello dude "}></IconWithToolTip> */}
+      <RadioButton item={items} />
     </AppContainer>
   );
 }
